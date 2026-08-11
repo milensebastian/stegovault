@@ -1,0 +1,6 @@
+{
+  "name": "StegoVault",
+  "description": "Client-side cryptographic steganography studio. Hide encrypted data in images, audio, and text with LSB embedding, zero-width unicode, AES-256-GCM, and visual bitplane analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

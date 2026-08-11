@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    background-color: #0b0c0e;
+    color: #ece8e0;
+    font-family: var(--font-sans);
+    background-image: 
+      radial-gradient(ellipse 1100px 600px at 12% -8%, rgba(201,168,118,0.06), transparent 60%),
+      radial-gradient(ellipse 900px 700px at 100% 10%, rgba(143,174,130,0.04), transparent 55%);
+  }
+
+  ::selection {
+    background: rgba(201, 168, 118, 0.3);
+    color: #ffffff;
+  }
+}
+
+.font-serif-custom {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono-custom {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Custom scrollbar for dark tech interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1114;
+}
+::-webkit-scrollbar-thumb {
+  background: #272a30;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3e47;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.9; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
